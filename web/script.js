@@ -24,7 +24,7 @@ async function carregarAreas() {
 
       area.addEventListener('click', () => {
         if (total > 0) {
-          window.location.href = `detalhes.html?area=${i}`;
+          alert(`A área ${i} está ocupada.`);
         } else {
           alert(`A área ${i} está vazia.`);
         }
