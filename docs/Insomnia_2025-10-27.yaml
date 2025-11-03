@@ -1,0 +1,394 @@
+type: collection.insomnia.rest/5.0
+name: Estacionamento
+meta:
+  id: wrk_8a62963363d14850b0e89decdecdd96f
+  created: 1762168426238
+  modified: 1762170990381
+  description: ""
+collection:
+  - name: Vendas
+    meta:
+      id: fld_4d331a1c2a0b4dfc8351911cca03db99
+      created: 1755277474945
+      modified: 1762169654045
+      sortKey: -1755144382030.8496
+      description: ""
+    children:
+      - url: http://localhost:3000/vendas
+        name: READ
+        meta:
+          id: req_93c900745bd0490a93ae81332fa679a4
+          created: 1732878601880
+          modified: 1762168811127
+          isPrivate: false
+          description: ""
+          sortKey: -1755277478198
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NTI3ODIyMiwiZXhwIjoxNzU1MjgxODIyfQ.khgqucyCJK3HtkeDZo2d5AOLkPZlIV_fGFtAgQHGAvo
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/vendas
+        name: CREATE
+        meta:
+          id: req_628a2902c6594132bf30420b92b9ef9f
+          created: 1755277527574
+          modified: 1762170925923
+          isPrivate: false
+          description: ""
+          sortKey: -1743920663373.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "cliente": 1,
+              "alocacao": 5
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: "Authorization: Bearer
+            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NT\
+            I3ODM2NywiZXhwIjoxNzU1MjgxOTY3fQ.Q6-5SKnvcdOlK8ZHvYGNVXQCdJFq8hywmB\
+            ag4oSNdgk"
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Clientes
+    meta:
+      id: fld_b17f35403f4d40bf94f03d84539e1ec4
+      created: 1762169609446
+      modified: 1762170629394
+      sortKey: -1755188746435.5664
+      description: ""
+    children:
+      - url: http://localhost:3000/clientes
+        name: READ
+        meta:
+          id: req_e7dea8f0a2094896a1e4014df7989dcd
+          created: 1762169609449
+          modified: 1762169694692
+          isPrivate: false
+          description: ""
+          sortKey: -1755277478198
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NTI3ODIyMiwiZXhwIjoxNzU1MjgxODIyfQ.khgqucyCJK3HtkeDZo2d5AOLkPZlIV_fGFtAgQHGAvo
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/clientes
+        name: CREATE
+        meta:
+          id: req_62b6d2c6895949189d592235ef5e30dd
+          created: 1762169609453
+          modified: 1762169738244
+          isPrivate: false
+          description: ""
+          sortKey: -1743920663373.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "nome":"Eloa"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: "Authorization: Bearer
+            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NT\
+            I3ODM2NywiZXhwIjoxNzU1MjgxOTY3fQ.Q6-5SKnvcdOlK8ZHvYGNVXQCdJFq8hywmB\
+            ag4oSNdgk"
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Alocação
+    meta:
+      id: fld_f20110f0a7a74b93860b79838a8d8a0b
+      created: 1762169629518
+      modified: 1762169629518
+      sortKey: -1755188746335.5664
+      description: ""
+    children:
+      - url: http://localhost:3000/alocacoes
+        name: READ
+        meta:
+          id: req_80e00910f3754c73947469178f3f8f79
+          created: 1762169629521
+          modified: 1762169675399
+          isPrivate: false
+          description: ""
+          sortKey: -1755277478198
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NTI3ODIyMiwiZXhwIjoxNzU1MjgxODIyfQ.khgqucyCJK3HtkeDZo2d5AOLkPZlIV_fGFtAgQHGAvo
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/alocacoes
+        name: CREATE
+        meta:
+          id: req_1bf4901b57514ac8a1ad83ba072089e9
+          created: 1762169629524
+          modified: 1762170917901
+          isPrivate: false
+          description: ""
+          sortKey: -1743920663373.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "area": 10,
+              "quantidade": 5,
+              "automovel": 1,
+              "concessionaria": 1,
+              "possui": 1,
+              "contem": 1,
+              "vendas": 1
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: "Authorization: Bearer
+            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NT\
+            I3ODM2NywiZXhwIjoxNzU1MjgxOTY3fQ.Q6-5SKnvcdOlK8ZHvYGNVXQCdJFq8hywmB\
+            ag4oSNdgk"
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Concessionaria
+    meta:
+      id: fld_590d600836d546c7bf02d2b64047a50f
+      created: 1762170622632
+      modified: 1762170622632
+      sortKey: -1755188746385.5664
+      description: ""
+    children:
+      - url: http://localhost:3000/concessionarias
+        name: READ
+        meta:
+          id: req_48a24fa15b7449c6a554a3d2c47c4c16
+          created: 1762170622635
+          modified: 1762170849864
+          isPrivate: false
+          description: ""
+          sortKey: -1755277478198
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NTI3ODIyMiwiZXhwIjoxNzU1MjgxODIyfQ.khgqucyCJK3HtkeDZo2d5AOLkPZlIV_fGFtAgQHGAvo
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/concessionarias
+        name: CREATE
+        meta:
+          id: req_0a1c827271f04004a4936136926a7d2c
+          created: 1762170622640
+          modified: 1762170858449
+          isPrivate: false
+          description: ""
+          sortKey: -1743920663373.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |
+            {
+              "concessionaria": "Auto Center"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: "Authorization: Bearer
+            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NT\
+            I3ODM2NywiZXhwIjoxNzU1MjgxOTY3fQ.Q6-5SKnvcdOlK8ZHvYGNVXQCdJFq8hywmB\
+            ag4oSNdgk"
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Automovel
+    meta:
+      id: fld_9b5bcdd032be4e79bf5ea187e96ac76c
+      created: 1762170642059
+      modified: 1762170642059
+      sortKey: -1755188746410.5664
+      description: ""
+    children:
+      - url: http://localhost:3000/automoveis
+        name: READ
+        meta:
+          id: req_e3e4c0da98b74445883a4fa7482dcec6
+          created: 1762170642062
+          modified: 1762170831164
+          isPrivate: false
+          description: ""
+          sortKey: -1755277478198
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NTI3ODIyMiwiZXhwIjoxNzU1MjgxODIyfQ.khgqucyCJK3HtkeDZo2d5AOLkPZlIV_fGFtAgQHGAvo
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:3000/automoveis
+        name: CREATE
+        meta:
+          id: req_dbe69ffdc8684df19926fe4da7d9ba83
+          created: 1762170642066
+          modified: 1762170840158
+          isPrivate: false
+          description: ""
+          sortKey: -1743920663373.5
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "modelo": "Fiat Uno",
+              "preco": 45000.0
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/10.1.1
+        authentication:
+          type: apikey
+          key: "Authorization: Bearer
+            eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTc1NT\
+            I3ODM2NywiZXhwIjoxNzU1MjgxOTY3fQ.Q6-5SKnvcdOlK8ZHvYGNVXQCdJFq8hywmB\
+            ag4oSNdgk"
+          value: ""
+          disabled: false
+          addTo: header
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_f50c857fd1c342f29fc1ea5749213433
+    created: 1755277101110
+    modified: 1755277101110
+environments:
+  name: Base Environment
+  meta:
+    id: env_ee27ca9a3b984d6a874865975033172b
+    created: 1732878601855
+    modified: 1755277100862
+    isPrivate: false
