@@ -31,7 +31,7 @@ node server.js
 # Abra web/index.html no navegador
 ```
 
-## 📁 Estrutura
+## Estrutura
 ```
 ├── src/           # Código fonte da API
 ├── web/           # Interface front-end
